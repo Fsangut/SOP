@@ -1,0 +1,486 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway',Verdana;
+    /*background: url(Slike/back1920.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;*/
+    background-color: #F7F7F2;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #bbbbbb;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #8BC343;
+  }
+header{
+    position: fixed;
+    z-index:999;
+    top:0;
+    left:0;
+    padding: 0 100px;
+    background:#fff;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bbbbbb;
+}
+header .logo img{
+    padding-top: 5px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+header nav ul li{
+    list-style:none;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding:0 20px;
+    color:#262626;
+    text-decoration: none;
+    display: block  ;
+}
+header nav ul li.active,header nav ul li:hover{
+    color:#262626;
+    background:#8BC343;
+}
+.menu-toggle{
+    color:#262626;
+    float: right;
+    line-height: 50px;
+    font-size:24px;
+    cursor: pointer;
+    display:none;
+}
+.Pocetno{
+    width: auto;
+    height: 625px;
+    position: center;
+}
+.naslov{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 90%;
+    border-top-left-radius: 50px 20px;  
+    border-top-right-radius: 20px 50px;
+    border-bottom-right-radius: 50px 20px;
+    border-bottom-left-radius: 20px 50px;
+    border-left:  2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.slidershow{
+    width: 900px;
+    height:500px;
+    overflow: hidden;
+}
+.middle{
+    position: absolute;
+    top:500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border:2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+#naslov{
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#Onama{
+    margin-top: 60px;
+}
+#naslov2{
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 3px solid #8BC343;
+    border-right: 3px solid #8BC343;
+    margin-bottom: 50px;
+}
+.containerOnama{
+    position: relative;
+    padding-right: 40px;    
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#slikaFam{
+    list-style: none;
+    flex: 0 0 50%;
+}
+#slikaFam img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#mainOnama{
+    margin:auto;
+    list-style: none;
+    flex: 0 0 50%;
+    text-align: justify ;
+}
+#mainOnama p{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+/*#borderLeftBot{
+    padding-left: 10px;
+    border-left: 3px solid #8BC343;
+    border-bottom: 3px solid #8BC343;
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    bottom: 0;
+}*/
+#mainOnama p a{
+    color: #8BC343;
+    text-decoration: none;
+}
+#Proizvodi{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#naslov3{
+    position: relative;
+    padding-right: 40px;    
+    padding-left: 40px;
+    padding-bottom: 0px;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 26px 52px 78px 13px;
+    border-bottom: 3px solid #8BC343;
+    border-bottom-width: 10px;
+}
+.containerProizvodi{
+    position: relative;
+    padding-right: 40px;    
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#slikaProizvodi{
+    list-style: none;
+    flex: 0 0 25%;
+    padding-bottom: 20px;
+}
+#slikaProizvodi img{
+    width: auto;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainProizvodi{
+    margin:auto;
+    list-style: none;
+    flex: 0 0 25%;
+    text-align: justify ;
+    padding-bottom: 20px;
+}
+#mainProizvodi p{
+    margin-left: 0;
+    margin-right: auto;
+}
+#naslov4{
+    position: relative;
+    padding-right: 40px;    
+    padding-left: 40px;
+    padding-bottom: 5px;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 78px/26px;    
+    border-left: 3px solid #8BC343;
+    border-bottom: 3px solid #8BC343;
+    border-right: 3px solid #8BC343;
+}
+
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding:40px;
+}
+#karta{
+    list-style: none;
+    flex: 0 0 60%;
+    text-align: center;
+}
+#mainKarta{
+    list-style: none;
+    flex: 0 0 30%;
+    margin:auto;
+}
+#naslov5{
+    position: relative;
+    padding-right: 40px;    
+    padding-left: 10px;
+    padding-bottom: 5px;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;   
+    border-left: 3px solid #8BC343;
+}
+#Kontakt{
+    background-color: #fff;
+    border-top: 1px solid #bbbbbb;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#folog{
+    list-style: none;
+    flex: 0 0 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#contact{
+    list-style: none;
+    flex: 0 0 25%;
+    margin:auto;
+}
+#contact span{
+    margin:auto;
+    font-size:23px;
+}
+#socials{
+    list-style: none;
+    flex: 0 0 25%;
+    margin:auto;
+}
+#socials .fa, #contact .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+#socials .fa{
+    padding: 20px;
+}
+#contact .fa{
+    padding:0px;
+}
+.fa-phone{
+      background: none;
+      color: #8BC343;
+}
+.fa-envelope{
+      background: none;
+      color: #8BC343;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.footer-bottom{
+    background: #8BC343;
+	color: #fff;
+	height:100%;
+	text-align:center;
+	position:relative;
+	bottom:0px;
+	left:0px;
+	width:100%;
+}
+@media(min-width: 1500px){
+    .Pocetno{
+        width: auto;
+        height: 850px;
+    }
+    .middle{
+        top:600px;
+    }
+    .slidershow{
+        width: 1200px;
+        height: 700px;
+    }
+}
+@media(max-width: 900px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh-50px);
+        background:#f2f2f2;
+        top:50px;
+        left:-100%;
+        transition:0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display:block;
+        text-align: center;
+    }
+    .Pocetno{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #naslov{
+        text-align: center;
+        font-size: 32px;
+    }
+ 
+    .slidershow{
+        width: 100%;
+        height: auto;
+        max-height: 458px;
+        max-width: 733px;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    /*#borderLeftBot{
+        height:  50%;
+    }*/
+    #mainOnama{
+        flex: 0 0 100%;
+        margin:0;
+    }
+    #mainOnama p{
+        padding-left: 10px;
+    }
+    #slikaFam{
+        flex: 0 0 100%;
+        margin:0;   
+    }
+    #slikaFam img{
+        width: 100%;
+        height: auto;
+    }
+    #slikaProizvodi{
+        flex: 0 0 30%;
+        padding-bottom: 20px;
+    }
+    #mainProizvodi{
+        flex: 0 0 70%;
+        padding-bottom: 20px;
+    }
+    #mainProizvodi p{
+        margin-left: auto;
+    }
+    #folog{
+        list-style: none;
+        flex: 0 0 50%;
+        margin: 0;
+        text-align: none;
+    }
+}
+@media(max-width: 724px){
+    .footer{
+        flex-direction: column;
+    }
+}
+@media(max-width: 560px){
+    .containerProizvodi{
+        flex-direction: column;
+    }
+}

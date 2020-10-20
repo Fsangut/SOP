@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="site.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>ŠOP</title>
+        <link rel="icon" type="img/png" sizes="32x32" href="Slike/logo32.png">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="site.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class ="logo"><img src="Slike/logo.png"></div>
+            <nav>
+                    <ul>
+                        <li class="active"><a href="#">POČETNA</a></li>
+                        <li><a href="#Onama">O NAMA</a></li>
+                        <li><a href="#Proizvodi">PROIZVODI</a></li>
+                        <li><a href="#Lokacija">LOKACIJA</a></li>
+                        <li><a href="#Kontakt">KONTAKT</a></li>
+                    </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </header>
+        
+        <div class="Pocetno">
+            <div class ="naslov">
+                <h1 id="naslov">
+                    Dobrodošli na ŠOP!
+                </h1>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div class = "slidershow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+
+                    <div class="slide s1">
+                    <img src="Slike/pic1.jpg" alt ="povrće">
+                </div>
+                <div class="slide">
+                        <img src="Slike/pic2.jpg" alt ="povrće">
+                    </div> 
+                    <div class="slide">
+                        <img src="Slike/pic3.jpg" alt ="povrće">
+                    </div> 
+                    <div class="slide">
+                        <img src="Slike/pic4.jpg" alt ="jabuke">
+                    </div> 
+                    <div class="slide">
+                        <img src="Slike/pic5.jpg" alt ="grožđe">
+                    </div> 
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>  
+                </div>
+            </div>
+        </div>
+        <div id="Onama">
+            <h2 id="naslov2">
+                    O NAMA
+            </h2>
+            <div class="containerOnama">
+                    <div id="slikaFam"><img src="Slike/family.jpg">
+                    </div>
+                    <div id="mainOnama">
+                        <p>
+                        Mi smo obitelj Šangut i dolazimo iz maloga grada <a href="https://daruvar.hr/" target="_blank">Daruvara</a>. Na ovoj stranici ćete pronaći sve naše domaće proizvode koji dolaze iz ekološkog uzgoja. U svome vrtu uzgajamo kestene, šljive, breskve, lješnjake... od kojih radimo određene proizvode ili prodajemo zasebno, ovisi o dogovoru s vama :D 
+                        Naš "tim" čine Pavao, Nina, Iva, Filip, Ivan i Anja koji daju sve od sebe kako bi vam pružili maksimalno zadovoljstvo. Možete nas pronaći na <a href="#Lokacija">lokaciji</a> ili nas kontaktirati na <a href="#Kontakt">brojeve telefona</a>.
+                        </p>
+                    </div> 
+                <!--<div id="borderLeftBot"></div>-->
+            </div>      
+        </div>
+        <div id="Proizvodi">
+            <h2 id="naslov3">PROIZVODI</h2>        
+            <div class="containerProizvodi">
+                <div id="slikaProizvodi"><img src="Slike/rakija.jpg">
+                </div>
+                <div id="mainProizvodi">
+                    <p>
+                        Rakija je domaće proizvodnje i prodaje se za 50kn/L.<br>
+                        U ponudi imamo rakiju od šljive, grožđa, jabuke i breskve.
+                    </p>
+                </div>
+                <div id="slikaProizvodi"><img src="Slike/džem.png">
+                </div>
+                <div id="mainProizvodi">
+                    <p>
+                        Džem je domaće proizvodnje i prodaje se za 30kn/350g<br>
+                        U ponudi imamo džem od šljive, aronija-kupina, aronija-bobičasto voće.
+                    </p>
+                </div>
+                <!-- ------------------------------------------------------------------- -->
+                <div id="slikaProizvodi"><img src="Slike/sokAronija.jpg">
+                </div>
+                <div id="mainProizvodi">
+                    <p>
+                        Sok od aronije je domaće proizvodnje i prodaje se za 50kn/L<br>
+                        Sok nije 100% aronija, već ima i mali udio bobičastoga voća zbog boljeg okusa :D
+                    </p>
+                </div>
+                <div id="slikaProizvodi"><img src="Slike/ljesnjaci.jpg">
+                </div>
+                <div id="mainProizvodi">
+                    <p>
+                        Lješnjaci su isključivo eko proizvod te se prodaju po cijeni 50kn/kg OČIŠĆENI.<br>
+                        Moguće je kupiti i u ljusci po cijeni 20kn/kg.
+                    </p>
+                </div>
+                <!-- ------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <div id="Lokacija">
+            <h2 id="naslov4">LOKACIJA
+            </h2>
+            <div class="map">
+                <p id="mainKarta">Poštovani možete nas pronaći na lokaciji:<br> ulica Petra Svačića 9, 43500 Daruvar.</p>
+                <p id="karta"> <!--<iframe src="https://www.google.com/maps/d/embed?mid=1DIAWPMrgqAVCqHmEV0hNTqHzuSXntivN" width="640" height="480"></iframe> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9390.244442679295!2d17.221967506588587!3d45.595844059513695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x476798b2154c1589%3A0xf90f08e9d5dc9d7!2sUlica%20Petra%20Sva%C4%8Di%C4%87a%209%2C%20Daruvar!3m2!1d45.593786099999996!2d17.2209458!4m5!1s0x476798b9197c0b35%3A0x7d83cd39adcaef9a!2sVinogradski%20dol%2019%2C%20Daruvar!3m2!1d45.601361!2d17.233599899999998!5e0!3m2!1sen!2shr!4v1601895915294!5m2!1sen!2shr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.838569855977!2d17.218757115076738!3d45.59378983280884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476798b2154c1589%3A0xf90f08e9d5dc9d7!2sUl.%20Petra%20Sva%C4%8Di%C4%87a%209%2C%2043500%2C%20Daruvar!5e0!3m2!1sen!2shr!4v1601896057698!5m2!1sen!2shr" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </p>
+            </div>
+        </div>
+        <div id="Kontakt">
+            <h2 id="naslov5">KONTAKT</h2>
+            <div class="footer">
+                <div id="folog">
+                    <img src="Slike/logo.png">
+                </div>
+                <div id="contact">
+                    <span><i class="fa fa-phone"></i>&nbsp;043 331 404</span><br>
+                    <span><i class="fa fa-envelope"></i>&nbsp;sop@gmail.com</span>
+                </div>
+                <div id="socials">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a><br>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer-bottom">
+            @copy SOP.com | Designed by FiSha
+            </div>
+    </body>
+</html>
